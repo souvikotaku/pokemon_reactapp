@@ -1,0 +1,38 @@
+.image-container {
+	position: relative;
+	transition: transform 0.2s;
+}
+
+.image-container:hover {
+	cursor: pointer;
+	transform: scale(1.1);
+}
+
+.image-container:hover .overlay {
+	opacity: 1;
+}
+
+.overlay {
+	position: absolute;
+	background: rgba(0, 0, 0, 0.8);
+	width: 95%;
+	transition: 0.5s ease;
+  opacity: 0;
+  height: 95%;
+	/* bottom: 0; */
+	font-size: 20px;
+	padding: 20px;
+	text-align: center;
+	border-radius: 10px;
+}
+
+.shapeBox{
+    background: #283048;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #859398, #283048);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #859398, #283048); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  padding: 2%;
+}
+
+body{
+    background-color: black;
+}
